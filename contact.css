@@ -1,0 +1,81 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2em;
+  color: #1f1d1d;
+  cursor: default;
+}
+
+.logo span {
+  color: #7d2ae8;
+}
+
+.navigation {
+  margin-left: -200px;
+}
+
+.navigation a {
+  font-size: 1.1em; 
+  color: #1f1d1d; 
+  text-decoration: none; 
+  margin-right: 40px; 
+  font-weight: 500;
+  transition: .3s;
+  margin-left: 40px;
+}
+
+.navigation a:hover {
+  color: blueviolet;
+}
+
+.kontak {
+  background: white;
+  width: 100%;
+  padding: 10px 0;
+}
+.title6 {
+  color: white;
+  font-size: 75px;
+  width: 1130px;
+  text-align: center;
+  margin: auto;
+}
+.box6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+.card6 {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  background: #808080;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+}
+.card6 i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 60px 0;
+  color: white;
+}
+.kontak h5 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}

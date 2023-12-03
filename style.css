@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: wght@300; 400; 500; 600; 700; 800;900&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 100;
+}
+
+body{
+    background-color: rgb(110, 101, 101);
+}
+
+.logo {
+    font-size: 2em;
+    color: #1f1d1d;
+    cursor: default;
+}
+
+.logo span {
+    color: #7d2ae8;
+}
+
+.navigation {
+    margin-left: -200px;
+}
+
+.navigation a {
+    font-size: 1.1em; 
+    color: #1f1d1d; 
+    text-decoration: none; 
+    margin-right: 40px; 
+    font-weight: 500;
+    transition: .3s;
+    margin-left: 40px;
+}
+
+.navigation a:hover {
+    color: blueviolet;
+}
+
+
+.home {
+    position: relative; width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+
+.content {
+    max-width: 500px; 
+    color: #1f1d1d;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .slider{
+    padding-left: 3%;
+}
+
+.content h2 {
+    font-size: 5em;
+}
+
+.content h2 span {
+    color: #7d2ae8;
+}
+
+.content h4 {
+    font-size: 3em;
+}
+
+.section-2 img{
+    width: 350%;
+    position: center;
+    padding-left: 100%;
+}
+
+.btn-group {
+    padding-top: 50px;
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-group a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+    color: #7d2ae8;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+}
+
+
+
+.about {
+    position: relative; width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.about img {
+    width: 50%;
+    position: center;
+    padding-right: 10%;
+}
+
+
+
+
+/* down-cv */
+.Down-CV {
+    padding-top: 50px;
+}
+
+.Down-CV a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.Down-CV a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.Down-CV a:nth-child(2) {
+    color: #7d2ae8;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.Down-CV a:hover:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+}
+
+.image{
+	position: relative;
+	width: 100%;
+    
+}
+
+.image__img{
+	display: block;
+	width: 100%;
+}
+
+.image__overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.image__overlay--blur{
+	backdrop-filter: blur(5px);
+}
+
+.image__overlay > *{
+	transition: translateY(20px);
+	transition: transform 0.25px;
+}
+
+.image__overlay:hover{
+	opacity: 1;
+}
+
+.container{
+	width: 1600px;
+}
+
+.projects {
+    padding-top: 5%;
+}
+
+.subcontainer{
+	width: 50%;
+}
+
+
+.image__overlay .fa-brands.fa-github {
+    font-size: 50px; 
+}
+  
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #1f1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end{
+    position: absolute;
+    color: #7d2ae8;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+
+
+.my-slider .slider a:hover::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 1%;
+    font-size: 14px;
+    z-index: 1;
+    outline: none;
+}
+
+
+.my-slider .slider:nth-child(1) a::after {
+    content: "HTML5"; 
+}
+
+
+.my-slider .slider:nth-child(2) a::after {
+    content: "CSS3"; 
+}
+
+
+.my-slider .slider:nth-child(3) a::after {
+    content: "unity"; 
+}
+
+.my-slider .slider:nth-child(4) a::after {
+    content: "python"; 
+}
+
+.my-slider .slider:nth-child(5) a::after {
+    content: "flutter"; 
+}
+
+.my-slider .slider:nth-child(6) a::after {
+    content: "figma"; 
+}
